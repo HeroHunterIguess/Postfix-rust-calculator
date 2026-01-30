@@ -118,7 +118,7 @@ fn main() {
             }
 
             // creating and pushing number into stack
-            if (character == ' ' || is_op(character)) && (!num_build_list.is_empty()) {
+            if (character == ' ' || is_op(character)) && !num_build_list.is_empty() {
 
                 //syntax error if it will be invalid from extra decimal point
                 if num_build_list[num_build_list.len()-1] == '.' {
